@@ -1,4 +1,11 @@
 package com.javarush.task.task36.task3601;
 
-public class Model {
+import java.util.List;
+
+public class Model extends Service {
+    Service service = new Service();
+
+    public List<String> getStringDataList() {
+        return service.getData();
+    }
 }
